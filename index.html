@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Leonardo Pontes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/profile_btech.png">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+<body>   
+    <div class="hero-container">
+        <header>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menuAnchorProfile" class="scrollSuave">Tecnologias</a></li>
+                    <li><a href="#menuAnchorProject" class="scrollSuave">Projetos</a></li>
+                    <li><a href="#menuAnchorForm" class="scrollSuave">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Procurando um desenvolvedor Web?</h1>
+        
+        
+        <svg class="arrows">
+            <path class="a1" d="M0 00 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </div>
+    <div class="content-container">
+        <div id="menuAnchorProfile"></div>
+        <div class="profile-container">
+            <div class="profile-content">
+                <div class='arrow'><i class="fa-solid fa-arrow-up"></i></div>
+                <div class="profile-card">
+                    <img src="./assets/profile_tech2.png" alt="" class="profile-img">
+                    <span class="name-text">Leonardo Pontes</span>
+                    <span class="profile-text">
+                        “O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. ”
+                    </span>
+                    <a href="https://www.linkedin.com/in/leonardo-ganin-pontes-462a67211/" target="_blank">
+                        <button class="profile-button">Conhecer Linkedin!</button>
+                    </a>
+                    <div class="divider"></div>
+                    <div class="icons-container">
+                        <img class="icon-item" src="./assets/js.png" alt=""/>
+                        <img class="icon-item" src="./assets/node.png" alt=""/>
+                        <img class="icon-item" src="./assets/react (1).png" alt=""/>  
+                    </div>
+                </div>
+                
+                <div class="profile-sinopse">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptate! Quisquam temporibus in iste dicta perspiciatis veniam id dolorum dignissimos magni. Quas necessitatibus facilis eius exercitationem repellendus itaque, sequi rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi, aperiam pariatur a itaque expedita temporibus magnam, consectetur assumenda inventore facere, sequi doloremque possimus. Id asperiores eaque impedit quas sunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet enim numquam fuga facilis in porro nostrum delectus reprehenderit ea itaque, mollitia ducimus eligendi ut aliquam culpa assumenda velit modi libero!
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="content-container">
+        <div id="menuAnchorProject"></div>
+        <div class="project-container">
+            <div class="project-content">
+                <div class='arrow'><i class="fa-solid fa-arrow-up"></i></div>
+                <div class="position-container right">
+                    <div class="project-card">
+                        <img src="./assets/batmanimage.jpeg" alt="" class="project-img"/>
+                        <p class="project-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum vel fugiat similique dolores, illum rem praesentium dignissimos obcaecati? Reiciendis dicta dolores animi veritatis minus vel fugit repudiandae inventore magni.
+                        </p>
+                                              
+                    </div>
+                </div>
+                <div class="position-container left">
+                    <div class="project-card card-reverse">
+                        <img src="./assets/wppimage.jpeg" alt="" class="project-img image-reverse"/>
+                        <p class="project-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum vel fugiat similique dolores, illum rem praesentium dignissimos obcaecati? Reiciendis dicta dolores animi veritatis minus vel fugit repudiandae inventore magni.
+                        </p>                      
+                    </div>
+                </div>
+                <div class="position-container right">
+                    <div class="project-card">
+                        <img src="./assets/youtube_project.png" alt="" class="project-img"/>
+                        <p class="project-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum vel fugiat similique dolores, illum rem praesentium dignissimos obcaecati? Reiciendis dicta dolores animi veritatis minus vel fugit repudiandae inventore magni.
+                        </p>                      
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="content-container">
+        <div class="form-container">
+            <
+            <div id="menuAnchorForm"></div>
+            <form 
+                action="https://formspree.io/f/xpzewoob" 
+                method="POST"
+                >
+                
+                <label>
+                Nome:
+                <input type="text" name="nome">
+                </label>
+                <label>
+                Email:
+                <input type="email" name="email">
+                </label>
+                <label>
+                Telefone:
+                <input type="tel" name="tel" maxlength="11">
+                </label>
+                <label style="margin-top: 10px;">
+                Mensagem:
+                <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        var $doc = $('html, body');
+        $('.scrollSuave').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);        
+            return false;
+            });
+
+    </script>
+
+ 
+
+</body>
+</html>
